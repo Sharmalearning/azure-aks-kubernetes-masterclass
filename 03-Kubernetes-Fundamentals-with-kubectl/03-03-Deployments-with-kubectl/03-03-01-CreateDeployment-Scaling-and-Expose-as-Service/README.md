@@ -33,7 +33,8 @@ kubectl get po
 ## Step-03: Scaling a Deployment
 - Scale the deployment to increase the number of replicas (pods)
 ```
-# Scale Up the Deployment
+# Scale Up the Dep
+loyment
 kubectl scale --replicas=10 deployment/<Deployment-Name>
 kubectl scale --replicas=10 deployment/my-first-deployment 
 
