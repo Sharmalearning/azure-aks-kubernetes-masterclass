@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-first-replicaset
+    
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: firstrs-app
+
+  template:
+    metadata:
+      name: firstrs-pod
+      labels: 
+        app: firstrs-app
+    spec:
+      containers: 
+        - name: firstrs-pod
+          image: stacksimplify/kubenginx:2.0.0
+          ports: 
+            - containerPort: 80
+    

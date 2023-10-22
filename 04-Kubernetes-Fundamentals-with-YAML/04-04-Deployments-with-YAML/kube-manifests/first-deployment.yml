@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-first-deployment
+    
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: firstdeploy-app
+
+  template:
+    metadata:
+      name: firstdeploy-pod
+      labels: 
+        app: firstdeploy-app
+    spec:
+      containers: 
+        - name: firstdeploy-pod
+          image: stacksimplify/kubenginx:3.0.0
+          ports: 
+            - containerPort: 80
+    

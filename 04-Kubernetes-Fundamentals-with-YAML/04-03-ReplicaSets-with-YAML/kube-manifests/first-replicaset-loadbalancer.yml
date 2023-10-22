@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: firstrs-loadbalancer
+
+spec:
+  type: LoadBalancer
+  selector:
+    app: firstrs-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
