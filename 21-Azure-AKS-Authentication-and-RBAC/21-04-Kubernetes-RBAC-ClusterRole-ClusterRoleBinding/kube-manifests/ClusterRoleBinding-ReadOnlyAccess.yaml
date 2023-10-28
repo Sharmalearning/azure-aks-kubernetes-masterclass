@@ -9,4 +9,4 @@ roleRef:
 subjects:
 - kind: Group
   #name: groupObjectId # Your Azure AD Group Object ID: aksreadonly
-  name: "e8f709f7-4029-4fdb-b786-d0af29445fc9"  
+  name: "7db4f6bf-90fc-4dda-98f0-fd168d610899"  
